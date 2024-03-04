@@ -1,0 +1,544 @@
+     30    1       3       java.lang.Object::<init> (1 bytes)
+     30    3       3       java.lang.StringLatin1::hashCode (42 bytes)
+     30    2       3       java.lang.String::hashCode (60 bytes)
+                              @ 17   java.lang.String::isLatin1 (19 bytes)   inline
+                              @ 27   java.lang.StringLatin1::hashCode (42 bytes)   callee is too large
+                              @ 37  java/lang/StringUTF16::hashCode (not loaded)   not inlineable
+     31    6       3       java.util.ImmutableCollections$SetN::probe (56 bytes)
+                              @ 1   java.lang.Object::hashCode (0 bytes)   no static binding
+                              @ 9   java.lang.Math::floorMod (20 bytes)   inline
+                              @ 31   java.lang.Object::equals (11 bytes)   no static binding
+     31    5       3       java.lang.Math::floorMod (20 bytes)
+     31    4       3       java.lang.String::isLatin1 (19 bytes)
+     32    7       3       java.lang.String::equals (56 bytes)
+                              @ 44   java.lang.StringLatin1::equals (36 bytes)   callee is too large
+     32    8       3       java.lang.StringLatin1::equals (36 bytes)
+     32    9       3       java.util.Objects::equals (23 bytes)
+                              @ 11   java.lang.Object::equals (11 bytes)   no static binding
+     32   10       3       java.util.Set::of (4 bytes)
+     32   12       4       java.lang.StringLatin1::hashCode (42 bytes)
+     32   11       3       java.lang.module.ModuleDescriptor$Exports::<init> (20 bytes)
+                              @ 1   java.lang.Object::<init> (1 bytes)   inline
+     33   14       3       java.util.Objects::requireNonNull (14 bytes)
+                              @ 8   java.lang.NullPointerException::<init> (5 bytes)   don't inline Throwable constructors
+     33   15       3       java.util.AbstractCollection::<init> (5 bytes)
+                              @ 1   java.lang.Object::<init> (1 bytes)   inline
+     33   16       3       java.util.ImmutableCollections$AbstractImmutableSet::<init> (5 bytes)
+                              @ 1   java.util.ImmutableCollections$AbstractImmutableCollection::<init> (5 bytes)   inline
+                                @ 1   java.util.AbstractCollection::<init> (5 bytes)   inline
+                                  @ 1   java.lang.Object::<init> (1 bytes)   inline
+     33   17       3       java.lang.module.ModuleDescriptor::modsHashCode (43 bytes)
+                              @ 3   java.lang.Iterable::iterator (0 bytes)   no static binding
+                              @ 10   java.util.Iterator::hasNext (0 bytes)   no static binding
+                              @ 19   java.util.Iterator::next (0 bytes)   no static binding
+                              @ 30   java.lang.Enum::name (5 bytes)   inline
+                              @ 33   java.lang.String::hashCode (60 bytes)   callee is too large
+     34   18       3       java.util.Set::of (68 bytes)
+                              @ 41   java.util.ImmutableCollections$Set12::<init> (20 bytes)   inline
+                                @ 1   java.util.ImmutableCollections$AbstractImmutableSet::<init> (5 bytes)   inline
+                                  @ 1   java.util.ImmutableCollections$AbstractImmutableCollection::<init> (5 bytes)   inline
+                                    @ 1   java.util.AbstractCollection::<init> (5 bytes)   inline
+                                      @ 1   java.lang.Object::<init> (1 bytes)   inline
+                                @ 6   java.util.Objects::requireNonNull (14 bytes)   force inline by annotation
+                                  @ 8   java.lang.NullPointerException::<init> (5 bytes)   don't inline Throwable constructors
+                              @ 55   java.util.ImmutableCollections$Set12::<init> (53 bytes)   callee is too large
+                              @ 64   java.util.ImmutableCollections$SetN::<init> (90 bytes)   callee is too large
+     34   19       3       java.lang.String::coder (15 bytes)
+     35   21       1       java.lang.module.ModuleReference::descriptor (5 bytes)
+     35   20       1       java.lang.module.ModuleDescriptor::name (5 bytes)
+     35    3       3       java.lang.StringLatin1::hashCode (42 bytes)   made not entrant
+     35   13       4       java.lang.Object::<init> (1 bytes)
+     35    1       3       java.lang.Object::<init> (1 bytes)   made not entrant
+     35   22       3       java.lang.String::length (11 bytes)
+                              @ 6   java.lang.String::coder (15 bytes)   inline
+     36   23       3       java.lang.String::charAt (25 bytes)
+                              @ 1   java.lang.String::isLatin1 (19 bytes)   inline
+                              @ 12   java.lang.StringLatin1::charAt (15 bytes)   inline
+                                @ 3   java.lang.String::checkIndex (10 bytes)   inline
+                                  @ 5   jdk.internal.util.Preconditions::checkIndex (18 bytes)   intrinsic
+                              @ 21  java/lang/StringUTF16::charAt (not loaded)   not inlineable
+     36   24       3       java.lang.StringLatin1::charAt (15 bytes)
+                              @ 3   java.lang.String::checkIndex (10 bytes)   inline
+                                @ 5   jdk.internal.util.Preconditions::checkIndex (18 bytes)   intrinsic
+     37   25       3       java.util.ImmutableCollections$SetN$SetNIterator::hasNext (13 bytes)
+     37   26       3       java.util.concurrent.ConcurrentHashMap::tabAt (22 bytes)
+                              @ 15   jdk.internal.misc.Unsafe::getReferenceAcquire (7 bytes)   inline
+                                @ 3   jdk.internal.misc.Unsafe::getReferenceVolatile (0 bytes)   intrinsic
+     37   27       3       jdk.internal.misc.Unsafe::getReferenceAcquire (7 bytes)
+                              @ 3   jdk.internal.misc.Unsafe::getReferenceVolatile (0 bytes)   intrinsic
+     38   28       3       java.util.concurrent.ConcurrentHashMap::spread (10 bytes)
+     38   29       1       java.util.KeyValueHolder::getKey (5 bytes)
+     38   30       1       java.util.KeyValueHolder::getValue (5 bytes)
+     38   31       3       java.util.KeyValueHolder::<init> (21 bytes)
+                              @ 1   java.lang.Object::<init> (1 bytes)   inline
+                              @ 6   java.util.Objects::requireNonNull (14 bytes)   force inline by annotation
+                                @ 8   java.lang.NullPointerException::<init> (5 bytes)   don't inline Throwable constructors
+                              @ 14   java.util.Objects::requireNonNull (14 bytes)   force inline by annotation
+                                @ 8   java.lang.NullPointerException::<init> (5 bytes)   don't inline Throwable constructors
+     38   33       3       java.util.ImmutableCollections$SetN$SetNIterator::next (90 bytes)
+                              @ 86  java/util/NoSuchElementException::<init> (not loaded)   not inlineable
+     39   32       3       java.util.ImmutableCollections$MapN::probe (60 bytes)
+                              @ 1   java.lang.Object::hashCode (0 bytes)   no static binding
+                              @ 11   java.lang.Math::floorMod (20 bytes)   inline
+                              @ 35   java.lang.Object::equals (11 bytes)   no static binding
+     39   36     n 0       jdk.internal.misc.Unsafe::compareAndSetLong (native)   
+     39   37   !   3       java.util.concurrent.ConcurrentHashMap::putVal (432 bytes)
+     39   41     n 0       jdk.internal.misc.Unsafe::compareAndSetReference (native)   
+                              @ 17   java.lang.Object::hashCode (0 bytes)   no static binding
+                              @ 20   java.util.concurrent.ConcurrentHashMap::spread (10 bytes)   inline
+                              @ 69   java.util.concurrent.ConcurrentHashMap::tabAt (22 bytes)   callee uses too much stack
+                              @ 91   java.util.concurrent.ConcurrentHashMap$Node::<init> (20 bytes)   inline
+                                @ 1   java.lang.Object::<init> (1 bytes)   inline
+                              @ 94   java.util.concurrent.ConcurrentHashMap::casTabAt (21 bytes)   callee uses too much stack
+                              @ 120   java.util.concurrent.ConcurrentHashMap::helpTransfer (124 bytes)   callee is too large
+                              @ 159   java.lang.Object::equals (11 bytes)   no static binding
+                              @ 192   java.util.concurrent.ConcurrentHashMap::tabAt (22 bytes)   callee uses too much stack
+                              @ 242   java.lang.Object::equals (11 bytes)   no static binding
+                              @ 293   java.util.concurrent.ConcurrentHashMap$Node::<init> (20 bytes)   inline
+                                @ 1   java.lang.Object::<init> (1 bytes)   inline
+                              @ 331  java/util/concurrent/ConcurrentHashMap$TreeBin::putTreeVal (not loaded)   not inlineable
+                              @ 374  java/lang/IllegalStateException::<init> (not loaded)   not inlineable
+               !m             @ 409   java.util.concurrent.ConcurrentHashMap::treeifyBin (164 bytes)   callee is too large
+                              @ 427   java.util.concurrent.ConcurrentHashMap::addCount (280 bytes)   callee is too large
+               !              @ 49   java.util.concurrent.ConcurrentHashMap::initTable (112 bytes)   callee is too large
+                              @ 12   java.lang.NullPointerException::<init> (5 bytes)   don't inline Throwable constructors
+     41   38       3       java.util.concurrent.ConcurrentHashMap$Node::<init> (20 bytes)
+                              @ 1   java.lang.Object::<init> (1 bytes)   inline
+     41   39       3       java.util.concurrent.ConcurrentHashMap::addCount (280 bytes)
+                              @ 31   jdk.internal.misc.Unsafe::compareAndSetLong (0 bytes)   intrinsic
+                              @ 58  java/util/concurrent/ThreadLocalRandom::getProbe (not loaded)   not inlineable
+                              @ 91   jdk.internal.misc.Unsafe::compareAndSetLong (0 bytes)   intrinsic
+                              @ 115   java.util.concurrent.ConcurrentHashMap::sumCount (60 bytes)   callee is too large
+                              @ 161   java.util.concurrent.ConcurrentHashMap::resizeStamp (9 bytes)   inline
+                                @ 1   java.lang.Integer::numberOfLeadingZeros (79 bytes)   callee is too large
+                              @ 227   jdk.internal.misc.Unsafe::compareAndSetInt (0 bytes)   intrinsic
+               !m             @ 238   java.util.concurrent.ConcurrentHashMap::transfer (849 bytes)   callee is too large
+                              @ 257   jdk.internal.misc.Unsafe::compareAndSetInt (0 bytes)   intrinsic
+               !m             @ 267   java.util.concurrent.ConcurrentHashMap::transfer (849 bytes)   callee is too large
+                              @ 271   java.util.concurrent.ConcurrentHashMap::sumCount (60 bytes)   callee is too large
+               !              @ 104   java.util.concurrent.ConcurrentHashMap::fullAddCount (462 bytes)   callee is too large
+     42   44       3       java.util.HashMap::hash (20 bytes)
+                              @ 9   java.lang.Object::hashCode (0 bytes)   no static binding
+     43   45       3       java.util.HashMap::putVal (300 bytes)
+                              @ 20   java.util.HashMap::resize (356 bytes)   callee is too large
+                              @ 56   java.util.HashMap::newNode (13 bytes)   callee uses too much stack
+                              @ 91   java.lang.Object::equals (11 bytes)   no static binding
+                              @ 123   java.util.HashMap$TreeNode::putTreeVal (314 bytes)   callee's klass not linked yet
+                              @ 152   java.util.HashMap::newNode (13 bytes)   callee uses too much stack
+                              @ 169   java.util.HashMap::treeifyBin (110 bytes)   callee is too large
+                              @ 203   java.lang.Object::equals (11 bytes)   no static binding
+                              @ 253   java.util.HashMap::afterNodeAccess (1 bytes)   inline
+                              @ 288   java.util.HashMap::resize (356 bytes)   callee is too large
+                              @ 295   java.util.HashMap::afterNodeInsertion (1 bytes)   inline
+     43   40       3       java.util.concurrent.ConcurrentHashMap::putIfAbsent (8 bytes)
+               !m             @ 4   java.util.concurrent.ConcurrentHashMap::putVal (432 bytes)   callee is too large
+     44   53       3       java.util.HashMap::getNode (150 bytes)
+     44   54     n 0       java.lang.Object::hashCode (native)   
+                              @ 23   java.util.HashMap::hash (20 bytes)   inline
+                                @ 9   java.lang.Object::hashCode (0 bytes)   no static binding
+                              @ 63   java.lang.Object::equals (11 bytes)   no static binding
+                              @ 95   java.util.HashMap$TreeNode::getTreeNode (22 bytes)   callee's klass not linked yet
+                              @ 128   java.lang.Object::equals (11 bytes)   no static binding
+     44   49       3       java.util.HashMap::newNode (13 bytes)
+                              @ 9   java.util.HashMap$Node::<init> (26 bytes)   inline
+                                @ 1   java.lang.Object::<init> (1 bytes)   inline
+     44   50       3       java.util.HashMap$Node::<init> (26 bytes)
+                              @ 1   java.lang.Object::<init> (1 bytes)   inline
+     44   51       3       java.util.HashMap::afterNodeInsertion (1 bytes)
+     45   52       3       java.util.HashMap::put (13 bytes)
+                              @ 2   java.util.HashMap::hash (20 bytes)   inline
+                                @ 9   java.lang.Object::hashCode (0 bytes)   no static binding
+                              @ 9   java.util.HashMap::putVal (300 bytes)   callee is too large
+     45   55       3       java.util.ImmutableCollections$Set12$1::hasNext (13 bytes)
+     45   43       1       java.lang.module.ResolvedModule::reference (5 bytes)
+     45   46       1       java.lang.module.ModuleDescriptor$Exports::source (5 bytes)
+     45   34       3       java.util.ImmutableCollections$SetN::iterator (9 bytes)
+                              @ 5   java.util.ImmutableCollections$SetN$SetNIterator::<init> (36 bytes)   callee is too large
+     45   35       3       java.util.ImmutableCollections$SetN$SetNIterator::<init> (36 bytes)
+                              @ 6   java.lang.Object::<init> (1 bytes)   inline
+     46   57       1       java.util.ImmutableCollections$Set12::isEmpty (2 bytes)
+     46   48       1       java.lang.module.ResolvedModule::configuration (5 bytes)
+     46   42       3       java.util.concurrent.ConcurrentHashMap::casTabAt (21 bytes)
+                              @ 17   jdk.internal.misc.Unsafe::compareAndSetReference (0 bytes)   intrinsic
+     46   47       1       java.lang.module.ModuleDescriptor::isAutomatic (5 bytes)
+     46   58       3       java.lang.String::isEmpty (14 bytes)
+     46   56       1       java.lang.module.ModuleDescriptor$Exports::targets (5 bytes)
+////////////////////////////jit task begin////////////////////////////
+     48   59     n 0       java.lang.System::arraycopy (native)   (static)
+     49   60       1       java.lang.module.ModuleDescriptor::isOpen (5 bytes)
+     50   61     n 0       java.lang.invoke.MethodHandle::linkToStatic(LLLLLL)L (native)   (static)
+     51   62     n 0       java.lang.invoke.MethodHandle::invokeBasic(LLLLL)L (native)   
+     51   63     n 0       java.lang.invoke.MethodHandle::linkToSpecial(LLLLLLL)L (native)   (static)
+     52   64       1       java.lang.Enum::ordinal (5 bytes)
+     52   65       3       java.lang.Math::min (11 bytes)
+     52   66     n 0       java.lang.invoke.MethodHandle::linkToStatic(LJL)L (native)   (static)
+     52   67     n 0       java.lang.Class::isPrimitive (native)   
+     53   68     n 0       java.lang.invoke.MethodHandle::linkToStatic(LLL)L (native)   (static)
+     53   69     n 0       java.lang.invoke.MethodHandle::linkToStatic(LLLL)L (native)   (static)
+     53   70     n 0       java.lang.invoke.MethodHandle::invokeBasic(LJ)L (native)   
+     53   71     n 0       java.lang.invoke.MethodHandle::linkToSpecial(LLJL)L (native)   (static)
+     54   72       1       java.lang.invoke.MethodType::returnType (5 bytes)
+     54   73       3       java.lang.StringLatin1::canEncode (13 bytes)
+     56   74       3       java.lang.invoke.MethodTypeForm::canonicalize (74 bytes)
+     56   75     n 0       java.lang.invoke.MethodHandle::linkToStatic(JLILL)J (native)   (static)
+                              @ 10   java.lang.Class::isPrimitive (0 bytes)   intrinsic
+                              @ 45   sun.invoke.util.Wrapper::asPrimitiveType (20 bytes)     56   76     n 0       java.lang.invoke.MethodHandle::invokeBasic(JLIL)J (native)   
+   inline
+                                @ 1   sun.invoke.util.Wrapper::findWrapperType (102 bytes)   callee is too large
+                               56   77     n 0       java.lang.invoke.MethodHandle::linkToSpecial(LJLILL)J (native)   (static)
+      @ 10   sun.invoke.util.Wrapper::primitiveType (5 bytes)   inline
+                                @ 14   sun.invoke.util.Wrapper::forceType (72 bytes)   callee is too large
+                              @ 68   sun.invoke.util.Wrapper::asWrapperType (18 bytes)   inline
+                                @ 1   java.lang.Class::isPrimitive (0 bytes)   intrinsic
+                                @ 8   sun.invoke.util.Wrapper::forPrimitiveType (122 bytes)   callee is too large
+                                @ 12   sun.invoke.util.Wrapper::wrapperType (52 bytes)   callee is too large
+     56   78     n 0       java.lang.invoke.MethodHandle::linkToStatic(LLLLL)L (native)   (static)
+     56   79     n 0       java.lang.invoke.MethodHandle::invokeBasic(LLLL)L (native)   
+     57   80       3       java.lang.StringLatin1::indexOfChar (33 bytes)
+     57   81     n 0       java.lang.invoke.MethodHandle::invokeBasic(JLI)J (native)   
+     57   82     n 0       java.lang.invoke.MethodHandle::linkToSpecial(LJLIL)J (native)   (static)
+     58   83     n 0       java.lang.invoke.MethodHandle::linkToStatic(JL)L (native)   (static)
+     58   84       3       java.lang.AbstractStringBuilder::isLatin1 (19 bytes)
+     58   85       3       java.util.concurrent.ConcurrentHashMap::get (162 bytes)
+     58   88     n 0       java.lang.invoke.MethodHandle::invokeBasic(J)L (native)   
+                              @ 1   java.lang.Object::hashCode (0 bytes)   no static binding
+             58   89     n 0       java.lang.invoke.MethodHandle::linkToSpecial(LJL)L (native)   (static)
+                      @ 4   java.util.concurrent.ConcurrentHashMap::spread (10 bytes)   inline
+                              @ 34   java.util.concurrent.ConcurrentHashMap::tabAt (22 bytes)   callee uses too much stack
+                              @ 73   java.lang.Object::equals (11 bytes)   no static binding
+                              @ 93   java.util.concurrent.ConcurrentHashMap$Node::find (52 bytes)   no static binding
+                              @ 149   java.lang.Object::equals (11 bytes)   no static binding
+     59   87       3       java.lang.AbstractStringBuilder::ensureCapacityInternal (39 bytes)
+                              @ 24   java.lang.AbstractStringBuilder::newCapacity (59 bytes)   callee is too large
+                              @ 32   java.util.Arrays::copyOf (19 bytes)   callee uses too much stack
+     59   92     n 0       java.lang.invoke.MethodHandle::linkToStatic(JIL)J (native)   (static)
+     59   86       1       java.lang.invoke.MemberName::getDeclaringClass (5 bytes)
+     59   90       3       java.lang.String::getBytes (44 bytes)
+                              @ 1   java.lang.String::coder (15 bytes)   inline
+     59   93     n 0       java.lang.invoke.MethodHandle::invokeBasic(JI)J (native)   
+                              @ 22   java.lang.System::arraycopy (0 bytes)   intrinsic
+                        59   94     n 0       java.lang.invoke.MethodHandle::linkToSpecial(LJIL)J (native)   (static)
+           @ 40   java.lang.StringLatin1::inflate (10 bytes)   callee uses too much stack
+     60   95       3       java.lang.invoke.MethodType::hashCode (53 bytes)
+                              @ 6   java.lang.Object::hashCode (0 bytes)   native method
+                              @ 40   java.lang.Object::hashCode (0 bytes)   native method
+     60   96       3       java.lang.Number::<init> (5 bytes)
+                              @ 1   java.lang.Object::<init> (1 bytes)   inline
+     60   98     n 0       java.lang.invoke.MethodHandle::linkToStatic(LLLJL)L (native)   (static)
+     60   91       1       java.lang.invoke.MethodType::ptypes (5 bytes)
+     60   99       3       java.lang.StringBuilder::append (8 bytes)
+                              @ 2   java.lang.AbstractStringBuilder::append (45 bytes)   callee is too large
+     60   97       1       java.lang.AbstractStringBuilder::length (5 bytes)
+     60  101     n 0       java.lang.Class::isArray (native)   
+     60  102     n 0       java.lang.invoke.MethodHandle::invokeBasic(LLLJ)L (native)   
+     60  100       1       java.lang.AbstractStringBuilder::getValue (5 bytes)
+     61  103       3       jdk.internal.org.objectweb.asm.SymbolTable::hash (10 bytes)
+                              @ 4   java.lang.String::hashCode (60 bytes)   callee is too large
+     61  105       3       jdk.internal.org.objectweb.asm.ByteVector::putUTF8 (144 bytes)
+                              @ 1   java.lang.String::length (11 bytes)   inline
+                                @ 6   java.lang.String::coder (15 bytes)   inline
+                              @ 17   java.lang.IllegalArgumentException::<init> (6 bytes)   don't inline Throwable constructors
+     61  106     n 0       java.lang.invoke.MethodHandle::linkToStatic(LLLLLLL)L (native)   (static)
+                              @ 43   jdk.internal.org.objectweb.asm.ByteVector::enlarge (73 bytes)   callee is too large
+                              @ 85   java.lang.String::charAt (25 bytes)   inline
+                                @ 1   java.lang.String::isLatin1 (19 bytes)   inline
+                                @ 12   java.lang.StringLatin1::charAt (15 bytes)   inline
+                                  @ 3   java.lang.String::checkIndex (10 bytes)   inline
+                                       61  107     n 0       java.lang.invoke.MethodHandle::invokeBasic(I)J (native)   
+  @ 5   jdk.internal.util.Preconditions::checkIndex (18 bytes)   intrinsic
+                                   61  109     n 0       java.lang.invoke.MethodHandle::linkToSpecial(LIL)J (native)   (static)
+  @ 21   java.lang.StringUTF16::charAt (11 bytes)   inline
+                                  @ 2   java.lang.StringUTF16::checkIndex (9 bytes)   inline
+                                    @ 2   java.lang.StringUTF16::length (5 bytes)   inline
+                                    @ 5   java.lang.String::checkIndex (10 bytes)     62  110     n 0       java.lang.invoke.MethodHandle::invokeBasic(LLLLLL)L (native)   
+   inline
+                                      @ 5   jdk.internal.util.Preconditions::checkIndex (18 bytes)   intrinsic
+                                  @ 7   java.lang.StringUTF16::getChar (60 bytes)   intrinsic
+                              @ 127   jdk.internal.org.objectweb.asm.ByteVector::encodeUtf8 (337 bytes)   callee is too large
+     62  104       3       java.lang.invoke.MethodType::parameterType (7 bytes)
+     62  112       3       jdk.internal.org.objectweb.asm.SymbolTable::get (13 bytes)
+     62  113     n 0       java.lang.invoke.MethodHandle::invokeBasic(I)L (native)   
+     62  111       3       java.lang.invoke.MethodType::checkSlotCount (33 bytes)
+     62  114     n 0       java.lang.invoke.MethodHandle::linkToSpecial(LIL)L (native)   (static)
+                              @ 13   java.lang.StringBuilder::<init> (7 bytes)   inline
+                                @ 3   java.lang.AbstractStringBuilder::<init> (39 bytes)   callee is too large
+                              @ 18   java.lang.StringBuilder::append (8 bytes)   inline
+                                @ 2   java.lang.AbstractStringBuilder::append (45 bytes)   callee is too large
+                              @ 22   java.lang.StringBuilder::append (8 bytes)   inline
+                                @ 2   java.lang.AbstractStringBuilder::append (55 bytes)   callee is too large
+                              @ 25   java.lang.StringBuilder::toString (9 bytes)   inline
+                                @ 5   java.lang.String::<init> (7 bytes)   inline
+                                  @ 3   java.lang.String::<init> (99 bytes)   callee is too large
+                              @ 28   java.lang.invoke.MethodHandleStatics::newIllegalArgumentException (9 bytes)   inline
+                                @ 5   java.lang.IllegalArgumentException::<init> (6 bytes)   don't inline Throwable constructors
+     63  115       3       java.lang.invoke.DirectMethodHandle::internalMemberName (8 bytes)
+     63  108       1       java.lang.invoke.MethodType::form (5 bytes)
+     63  116       3       java.lang.StringConcatHelper::newArray (40 bytes)
+                              @ 22   java.lang.OutOfMemoryError::<init> (6 bytes)   don't inline Throwable constructors
+                              @ 33   jdk.internal.misc.Unsafe::allocateUninitializedArray (55 bytes)   callee is too large
+     64  118       3       java.lang.String::<init> (15 bytes)
+                              @ 1   java.lang.Object::<init> (1 bytes)   inline
+     64  117       3       java.lang.StringConcatHelper::newString (67 bytes)
+                              @ 12   java.lang.String::<init> (15 bytes)   inline
+                                @ 1   java.lang.Object::<init> (1 bytes)   inline
+                              @ 30   java.lang.String::<init> (15 bytes)   inline
+                                @ 1   java.lang.Object::<init> (1 bytes)   inline
+                              @ 42   java.lang.StringBuilder::<init> (7 bytes)   inline
+                                @ 3   java.lang.AbstractStringBuilder::<init> (39 bytes)   callee is too large
+                              @ 47   java.lang.StringBuilder::append (8 bytes)   inline
+                                @ 2   java.lang.AbstractStringBuilder::append (45 bytes)   callee is too large
+                              @ 52   java.lang.StringBuilder::append (8 bytes)   inline
+                                @ 2   java.lang.AbstractStringBuilder::append (55 bytes)   callee is too large
+                              @ 57   java.lang.StringBuilder::append (8 bytes)   inline
+                                @ 2   java.lang.AbstractStringBuilder::append (45 bytes)   callee is too large
+                              @ 60   java.lang.StringBuilder::toString (9 bytes)   inline
+                                @ 5   java.lang.String::<init> (7 bytes)   inline
+                                  @ 3   java.lang.String::<init> (99 bytes)   callee is too large
+                              @ 63   java.lang.InternalError::<init> (6 bytes)   callee's klass not linked yet
+     64  124       3       java.lang.Integer::stringSize (47 bytes)
+     65  125       3       java.lang.Integer::getChars (121 bytes)
+     65  120       3       java.lang.StringConcatHelper::prepend (37 bytes)
+                              @ 2   java.lang.String::length (11 bytes)   inline
+                                @ 6   java.lang.String::coder (15 bytes)   inline
+                              @ 21   java.lang.String::getBytes (44 bytes)   callee is too large
+                              @ 32   java.lang.String::getBytes (44 bytes)   callee is too large
+     65  119       3       java.lang.StringConcatHelper::checkOverflow (17 bytes)
+                              @ 13   java.lang.OutOfMemoryError::<init> (6 bytes)   don't inline Throwable constructors
+     65  121       3       java.lang.Integer::<init> (10 bytes)
+                              @ 1   java.lang.Number::<init> (5 bytes)   inline
+                                @ 1   java.lang.Object::<init> (1 bytes)   inline
+     66  122       3       jdk.internal.misc.Unsafe::allocateUninitializedArray0 (90 bytes)
+     66  123       3       jdk.internal.misc.Unsafe::allocateUninitializedArray (55 bytes)
+                              @ 11   java.lang.IllegalArgumentException::<init> (6 bytes)   don't inline Throwable constructors
+                              @ 16   java.lang.Class::isPrimitive (0 bytes)   intrinsic
+                              @ 29   java.lang.IllegalArgumentException::<init> (6 bytes)   don't inline Throwable constructors
+                              @ 44   java.lang.IllegalArgumentException::<init> (6 bytes)   don't inline Throwable constructors
+                              @ 51   jdk.internal.misc.Unsafe::allocateUninitializedArray0 (90 bytes)   callee is too large
+     66  126       3       java.lang.Integer::valueOf (32 bytes)
+                              @ 28   java.lang.Integer::<init> (10 bytes)   inline
+                                @ 1   java.lang.Number::<init> (5 bytes)   inline
+                                  @ 1   java.lang.Object::<init> (1 bytes)   inline
+     66  127       3       java.lang.Integer::hashCode (8 bytes)
+                              @ 4   java.lang.Integer::hashCode (2 bytes)   inline
+     67  128       3       java.lang.Integer::hashCode (2 bytes)
+     67  129       3       java.lang.invoke.Invokers$Holder::linkToTargetMethod (9 bytes)
+     67  140       4       java.lang.invoke.DirectMethodHandle::internalMemberName (8 bytes)
+                              @ 5   java.lang.invoke.MethodHandle::invokeBasic(I)L (0 bytes)   receiver not constant
+     67  130       3       java.lang.invoke.LambdaForm$MH/0x0000000801002000::invoke (75 bytes)
+                              @ 15   java.lang.invoke.MethodHandle::invokeBasic(I)J (0 bytes)   receiver not constant
+                              @ 31   java.lang.invoke.MethodHandle::invokeBasic(J)L (0 bytes)   receiver not constant
+                              @ 51   java.lang.invoke.MethodHandle::invokeBasic(JLI)J (0 bytes)   receiver not constant
+                              @ 71   java.lang.invoke.MethodHandle::invokeBasic(LJ)L (0 bytes)   receiver not constant
+     67  115       3       java.lang.invoke.DirectMethodHandle::internalMemberName (8 bytes)   made not entrant
+     67  131       3       java.lang.invoke.LambdaForm$MH/0x0000000801001c00::invoke (27 bytes)
+                              @ 23   java.lang.invoke.MethodHandle::invokeBasic(JI)J (0 bytes)   receiver not constant
+     68  132       3       java.lang.invoke.DirectMethodHandle$Holder::invokeStatic (17 bytes)
+                              @ 1   java.lang.invoke.DirectMethodHandle::internalMemberName (8 bytes)   force inline by annotation
+                              @ 13   java.lang.invoke.MethodHandle::linkToStatic(JIL)J (0 bytes)   MemberName not constant
+     68  133       3       java.lang.StringConcatHelper::mix (11 bytes)
+                              @ 2   java.lang.Integer::stringSize (47 bytes)   callee is too large
+                              @ 7   java.lang.StringConcatHelper::checkOverflow (17 bytes)   inline
+                                @ 13   java.lang.OutOfMemoryError::<init> (6 bytes)   don't inline Throwable constructors
+     68  134       3       java.lang.invoke.DirectMethodHandle$Holder::invokeStatic (14 bytes)
+                              @ 1   java.lang.invoke.DirectMethodHandle::internalMemberName (8 bytes)   force inline by annotation
+                              @ 10   java.lang.invoke.MethodHandle::linkToStatic(JL)L (0 bytes)   MemberName not constant
+     68  135       3       java.lang.invoke.LambdaForm$MH/0x0000000801001000::invoke (32 bytes)
+                              @ 28   java.lang.invoke.MethodHandle::invokeBasic(JLIL)J (0 bytes)   receiver not constant
+     68  136       3       java.lang.invoke.DirectMethodHandle$Holder::invokeStatic (21 bytes)
+                              @ 1   java.lang.invoke.DirectMethodHandle::internalMemberName (8 bytes)   force inline by annotation
+                              @ 17   java.lang.invoke.MethodHandle::linkToStatic(JLILL)J (0 bytes)   MemberName not constant
+     69  137       3       java.lang.StringConcatHelper::prepend (22 bytes)
+                              @ 3   java.lang.StringConcatHelper::prepend (30 bytes)   inline
+                                @ 12   java.lang.Integer::getChars (121 bytes)   callee is too large
+                                @ 21   java.lang.StringUTF16::getChars (131 bytes)   callee is too large
+                              @ 16   java.lang.StringConcatHelper::prepend (37 bytes)   callee is too large
+     69  141       3       java.util.HashMap::resize (356 bytes)
+                              @ 217   java.util.HashMap$TreeNode::split (218 bytes)   callee's klass not linked yet
+     70  138       3       java.lang.StringConcatHelper::prepend (30 bytes)
+                              @ 12   java.lang.Integer::getChars (121 bytes)   callee is too large
+                              @ 21   java.lang.StringUTF16::getChars (131 bytes)   callee is too large
+     70  139       3       java.lang.invoke.DirectMethodHandle$Holder::invokeStatic (17 bytes)
+     70  142       4       java.lang.Integer::stringSize (47 bytes)
+                              @ 1   java.lang.invoke.DirectMethodHandle::internalMemberName (8 bytes)   force inline by annotation
+                              @ 13   java.lang.invoke.MethodHandle::linkToStatic(LJL)L (0 bytes)   MemberName not constant
+     72  124       3       java.lang.Integer::stringSize (47 bytes)   made not entrant
+     72  143       4       java.util.HashMap::putVal (300 bytes)
+     82   45       3       java.util.HashMap::putVal (300 bytes)   made not entrant
+                              @ 20   java.util.HashMap::resize (356 bytes)   too big
+                              @ 56   java.util.HashMap::newNode (13 bytes)   inline (hot)
+                                @ 9   java.util.HashMap$Node::<init> (26 bytes)   inline (hot)
+                                  @ 1   java.lang.Object::<init> (1 bytes)   inline (hot)
+                              @ 203   java.lang.Object::equals (11 bytes)   virtual call
+                              @ 152   java.util.HashMap::newNode (13 bytes)   inline (hot)
+                                @ 9   java.util.HashMap$Node::<init> (26 bytes)   inline (hot)
+                                  @ 1   java.lang.Object::<init> (1 bytes)   inline (hot)
+                              @ 288   java.util.HashMap::resize (356 bytes)   too big
+                              @ 295   java.util.HashMap::afterNodeInsertion (1 bytes)   inline (hot)
+     82  152       4       java.lang.Integer::getChars (121 bytes)
+     83  145       4       java.util.HashMap::put (13 bytes)
+     83  147       4       java.lang.String::getBytes (44 bytes)
+     84   90       3       java.lang.String::getBytes (44 bytes)   made not entrant
+                              @ 1   java.lang.String::coder (15 bytes)   inline (hot)
+                              @ 22   java.lang.System::arraycopy (0 bytes)   (intrinsic)
+     84  150       4       java.lang.StringConcatHelper::prepend (37 bytes)
+     85  120       3       java.lang.StringConcatHelper::prepend (37 bytes)   made not entrant
+                              @ 2   java.lang.String::length (11 bytes)   inline (hot)
+                                @ 6   java.lang.String::coder (15 bytes)   inline (hot)
+                              @ 21   java.lang.String::getBytes (44 bytes)   inline (hot)
+                                @ 1   java.lang.String::coder (15 bytes)   inline (hot)
+                                @ 22   java.lang.System::arraycopy (0 bytes)   (intrinsic)
+     85  146       4       java.lang.StringConcatHelper::newArray (40 bytes)
+     86  116       3       java.lang.StringConcatHelper::newArray (40 bytes)   made not entrant
+                              @ 33   jdk.internal.misc.Unsafe::allocateUninitializedArray (55 bytes)   inline (hot)
+                                @ 16   java.lang.Class::isPrimitive (0 bytes)   (intrinsic)
+                                @ 51   jdk.internal.misc.Unsafe::allocateUninitializedArray0 (90 bytes)   (intrinsic)
+     86  149       4       java.lang.StringConcatHelper::newString (67 bytes)
+     87  117       3       java.lang.StringConcatHelper::newString (67 bytes)   made not entrant
+                              @ 12   java.lang.String::<init> (15 bytes)   inline (hot)
+                                @ 1   java.lang.Object::<init> (1 bytes)   inline (hot)
+     87  153       4       java.lang.Integer::valueOf (32 bytes)
+     88  126       3       java.lang.Integer::valueOf (32 bytes)   made not entrant
+                              @ 28   java.lang.Integer::<init> (10 bytes)   inline (hot)
+                                @ 1   java.lang.Number::<init> (5 bytes)   inline (hot)
+                                  @ 1   java.lang.Object::<init> (1 bytes)   inline (hot)
+     88  154       4       java.lang.Integer::hashCode (8 bytes)
+     88  127       3       java.lang.Integer::hashCode (8 bytes)   made not entrant
+                              @ 4   java.lang.Integer::hashCode (2 bytes)   inline (hot)
+     88  155       4       java.lang.invoke.Invokers$Holder::linkToTargetMethod (9 bytes)
+     89  129       3       java.lang.invoke.Invokers$Holder::linkToTargetMethod (9 bytes)   made not entrant
+                              @ 5   java.lang.invoke.MethodHandle::invokeBasic(I)L (0 bytes)   receiver not constant
+     89  125       3       java.lang.Integer::getChars (121 bytes)   made not entrant
+     89  156       4       java.lang.invoke.LambdaForm$MH/0x0000000801002000::invoke (75 bytes)
+     89  157       4       java.lang.invoke.LambdaForm$MH/0x0000000801001c00::invoke (27 bytes)
+     89  131       3       java.lang.invoke.LambdaForm$MH/0x0000000801001c00::invoke (27 bytes)   made not entrant
+                              @ 23   java.lang.invoke.MethodHandle::invokeBasic(JI)J (0 bytes)   receiver not constant
+     89  158       4       java.lang.invoke.DirectMethodHandle$Holder::invokeStatic (17 bytes)
+     90  132       3       java.lang.invoke.DirectMethodHandle$Holder::invokeStatic (17 bytes)   made not entrant
+                              @ 1   java.lang.invoke.DirectMethodHandle::internalMemberName (8 bytes)   force inline by annotation
+                              @ 13   java.lang.invoke.MethodHandle::linkToStatic(JIL)J (0 bytes)   member_name not constant
+     90  159       4       java.lang.StringConcatHelper::mix (11 bytes)
+     90   52       3       java.util.HashMap::put (13 bytes)   made not entrant
+                              @ 2   java.util.HashMap::hash (20 bytes)   inline (hot)
+                                @ 9   java.lang.Object::hashCode (0 bytes)   (intrinsic, virtual)
+                              @ 9   java.util.HashMap::putVal (300 bytes)   inline (hot)
+                                @ 20   java.util.HashMap::resize (356 bytes)   too big
+                                @ 56   java.util.HashMap::newNode (13 bytes)   inline (hot)
+                                  @ 9   java.util.HashMap$Node::<init> (26 bytes)   inline (hot)
+                                    @ 1   java.lang.Object::<init> (1 bytes)   inline (hot)
+                                @ 203   java.lang.Object::equals (11 bytes)   virtual call
+                                @ 152   java.util.HashMap::newNode (13 bytes)   low call site frequency
+                                @ 288   java.util.HashMap::resize (356 bytes)   too big
+                                @ 295   java.util.HashMap::afterNodeInsertion (1 bytes)   inline (hot)
+     90  130       3       java.lang.invoke.LambdaForm$MH/0x0000000801002000::invoke (75 bytes)   made not entrant
+                              @ 15   java.lang.invoke.MethodHandle::invokeBasic(I)J (0 bytes)   receiver not constant
+                              @ 31   java.lang.invoke.MethodHandle::invokeBasic(J)L (0 bytes)   receiver not constant
+                              @ 51   java.lang.invoke.MethodHandle::invokeBasic(JLI)J (0 bytes)   receiver not constant
+                              @ 71   java.lang.invoke.MethodHandle::invokeBasic(LJ)L (0 bytes)   receiver not constant
+     90  160       4       java.lang.invoke.DirectMethodHandle$Holder::invokeStatic (14 bytes)
+     90  161       4       java.lang.invoke.LambdaForm$MH/0x0000000801001000::invoke (32 bytes)
+     91  134       3       java.lang.invoke.DirectMethodHandle$Holder::invokeStatic (14 bytes)   made not entrant
+                              @ 1   java.lang.invoke.DirectMethodHandle::internalMemberName (8 bytes)   force inline by annotation
+                              @ 10   java.lang.invoke.MethodHandle::linkToStatic(JL)L (0 bytes)   member_name not constant
+     91  162       4       java.lang.invoke.DirectMethodHandle$Holder::invokeStatic (21 bytes)
+     91  135       3       java.lang.invoke.LambdaForm$MH/0x0000000801001000::invoke (32 bytes)   made not entrant
+                              @ 28   java.lang.invoke.MethodHandle::invokeBasic(JLIL)J (0 bytes)   receiver not constant
+     91  163       4       java.lang.StringConcatHelper::prepend (22 bytes)
+     92  133       3       java.lang.StringConcatHelper::mix (11 bytes)   made not entrant
+                              @ 2   java.lang.Integer::stringSize (47 bytes)   inline (hot)
+                              @ 7   java.lang.StringConcatHelper::checkOverflow (17 bytes)   inline (hot)
+     92  164       4       java.lang.invoke.DirectMethodHandle$Holder::invokeStatic (17 bytes)
+     92  136       3       java.lang.invoke.DirectMethodHandle$Holder::invokeStatic (21 bytes)   made not entrant
+                              @ 1   java.lang.invoke.DirectMethodHandle::internalMemberName (8 bytes)   force inline by annotation
+                              @ 17   java.lang.invoke.MethodHandle::linkToStatic(JLILL)J (0 bytes)   member_name not constant
+     92  148       4       jdk.internal.misc.Unsafe::allocateUninitializedArray (55 bytes)
+     92  139       3       java.lang.invoke.DirectMethodHandle$Holder::invokeStatic (17 bytes)   made not entrant
+                              @ 1   java.lang.invoke.DirectMethodHandle::internalMemberName (8 bytes)   force inline by annotation
+                              @ 13   java.lang.invoke.MethodHandle::linkToStatic(LJL)L (0 bytes)   member_name not constant
+     92  151       4       jdk.internal.misc.Unsafe::allocateUninitializedArray0 (90 bytes)
+     93  123       3       jdk.internal.misc.Unsafe::allocateUninitializedArray (55 bytes)   made not entrant
+                              @ 16   java.lang.Class::isPrimitive (0 bytes)   (intrinsic)
+                              @ 51   jdk.internal.misc.Unsafe::allocateUninitializedArray0 (90 bytes)   (intrinsic)
+     93  144       4       java.util.HashMap::newNode (13 bytes)
+     93  122       3       jdk.internal.misc.Unsafe::allocateUninitializedArray0 (90 bytes)   made not entrant
+     93  165 %     4       java.util.HashMap::resize @ 151 (356 bytes)
+     94   49       3       java.util.HashMap::newNode (13 bytes)   made not entrant
+                              @ 9   java.util.HashMap$Node::<init> (26 bytes)   inline (hot)
+                                @ 1   java.lang.Object::<init> (1 bytes)   inline (hot)
+     97  166 %     3       ru.zubkoff.sber.hw15.Main::JitTask @ 24 (56 bytes)
+               !m             @ 5   java.io.PrintStream::println (44 bytes)   callee is too large
+                              @ 15   java.util.HashMap::<init> (11 bytes)   inline
+                                @ 1   java.util.AbstractMap::<init> (5 bytes)   inline
+                                  @ 1   java.lang.Object::<init> (1 bytes)   inline
+               !m             @ 52   java.io.PrintStream::println (44 bytes)   callee is too large
+                              @ 26   java.lang.Integer::valueOf (32 bytes)   inline
+                                @ 28   java.lang.Integer::<init> (10 bytes)   inline
+                                  @ 1   java.lang.Number::<init> (5 bytes)   inline
+                                    @ 1   java.lang.Object::<init> (1 bytes)   inline
+                              @ 30   java.lang.invoke.Invokers$Holder::linkToTargetMethod (9 bytes)   force inline by annotation
+                                @ 5   java.lang.invoke.LambdaForm$MH/0x0000000801002000::invoke (75 bytes)   force inline by annotation
+                                  @ 15   java.lang.invoke.LambdaForm$MH/0x0000000801001c00::invoke (27 bytes)   force inline by annotation
+                                    @ 23   java.lang.invoke.DirectMethodHandle$Holder::invokeStatic (17 bytes)   force inline by annotation
+                                      @ 1   java.lang.invoke.DirectMethodHandle::internalMemberName (8 bytes)   force inline by annotation
+                                      @ 13   java.lang.StringConcatHelper::mix (11 bytes)   inline
+                                        @ 2   java.lang.Integer::stringSize (47 bytes)   callee is too large
+                                        @ 7   java.lang.StringConcatHelper::checkOverflow (17 bytes)   inline
+                                          @ 13   java.lang.OutOfMemoryError::<init> (6 bytes)   don't inline Throwable constructors
+                                  @ 31   java.lang.invoke.DirectMethodHandle$Holder::invokeStatic (14 bytes)   force inline by annotation
+                                    @ 1   java.lang.invoke.DirectMethodHandle::internalMemberName (8 bytes)   force inline by annotation
+                                    @ 10   java.lang.StringConcatHelper::newArray (40 bytes)   force inline by annotation
+                                      @ 22   java.lang.OutOfMemoryError::<init> (6 bytes)   don't inline Throwable constructors
+                                      @ 33   jdk.internal.misc.Unsafe::allocateUninitializedArray (55 bytes)   callee is too large
+                                  @ 51   java.lang.invoke.LambdaForm$MH/0x0000000801001000::invoke (32 bytes)   force inline by annotation
+                                    @ 28   java.lang.invoke.DirectMethodHandle$Holder::invokeStatic (21 bytes)   force inline by annotation
+                                      @ 1   java.lang.invoke.DirectMethodHandle::internalMemberName (8 bytes)   force inline by annotation
+     98  137       3       java.lang.StringConcatHelper::prepend (22 bytes)   made not entrant
+                              @ 3   java.lang.StringConcatHelper::prepend (30 bytes)   inline (hot)
+                                @ 12   java.lang.Integer::getChars (121 bytes)   inline (hot)
+                              @ 16   java.lang.StringConcatHelper::prepend (37 bytes)   inline (hot)
+                                @ 2   java.lang.String::length (11 bytes)   inline (hot)
+                                  @ 6   java.lang.String::coder (15 bytes)   inline (hot)
+                                @ 21   java.lang.String::getBytes (44 bytes)   inline (hot)
+                                  @ 1   java.lang.String::coder (15 bytes)   inline (hot)
+                                  @ 22   java.lang.System::arraycopy (0 bytes)   (intrinsic)
+                                      @ 17   java.lang.StringConcatHelper::prepend (22 bytes)   callee is too large
+                                  @ 71   java.lang.invoke.DirectMethodHandle$Holder::invokeStatic (17 bytes)   force inline by annotation
+                                    @ 1   java.lang.invoke.DirectMethodHandle::internalMemberName (8 bytes)   force inline by annotation
+                                    @ 13   java.lang.StringConcatHelper::newString (67 bytes)   callee is too large
+                              @ 35   java.util.HashMap::put (13 bytes)   callee uses too much stack
+     99  167       3       ru.zubkoff.sber.hw15.Main::JitTask (56 bytes)
+               !m             @ 5   java.io.PrintStream::println (44 bytes)   callee is too large
+                              @ 15       99  148       4       jdk.internal.misc.Unsafe::allocateUninitializedArray (55 bytes)   made not entrant
+ java.util.HashMap::<init> (11 bytes)   inline
+                                @ 1   java.util.AbstractMap::<init> (5 bytes)   inline
+                                  @ 1   java.lang.Object::     99  168       4       jdk.internal.misc.Unsafe::allocateUninitializedArray (55 bytes)
+<init> (1 bytes)   inline
+               !m             @ 52   java.io.PrintStream::println (44 bytes)   callee is too large
+                              @ 26   java.lang.Integer::valueOf (32 bytes)   inline
+                                @ 28   java.lang.Integer::<init> (10 bytes)   inline
+                                  @ 1   java.lang.Number::<init> (5 bytes)   inline
+                                    @ 1   java.lang.Object::<init> (1 bytes)   inline
+                              @ 30   java.lang.invoke.Invokers$Holder::linkToTargetMethod (9 bytes)   force inline by annotation
+                                @ 5   java.lang.invoke.LambdaForm$MH/0x0000000801002000::invoke (75 bytes)   force inline by annotation
+                                  @ 15   java.lang.invoke.LambdaForm$MH/0x0000000801001c00::invoke (27 bytes)   force inline by annotation
+                                    @ 23   java.lang.invoke.DirectMethodHandle$Holder::invokeStatic (17 bytes)   force inline by annotation
+                                      @ 1   java.lang.invoke.DirectMethodHandle::internalMemberName (8 bytes)   force inline by annotation
+                                      @ 13   java.lang.StringConcatHelper::mix (11 bytes)   inline
+                                        @ 2   java.lang.Integer::stringSize (47 bytes)   callee is too large
+                                        @ 7   java.lang.StringConcatHelper::checkOverflow (17 bytes)   inline
+                                          @ 13   java.lang.OutOfMemoryError::<init> (6 bytes)   don't inline Throwable constructors
+                                  @ 31   java.lang.invoke.DirectMethodHandle$Holder::invokeStatic (14 bytes)   force inline by annotation
+                                    @ 1   java.lang.invoke.DirectMethodHandle::internalMemberName (8 bytes)   force inline by annotation
+                                    @ 10   java.lang.StringConcatHelper::newArray (40 bytes)   force inline by annotation
+                                      @ 22   java.lang.OutOfMemoryError::<init> (6 bytes)   don't inline Throwable constructors
+                                      @ 33   jdk.internal.misc.Unsafe::allocateUninitializedArray (55 bytes)   callee is too large
+                                  @ 51   java.lang.invoke.LambdaForm$MH/0x0000000801001000::invoke (32 bytes)   force inline by annotation
+                                    @ 28   java.lang.invoke.DirectMethodHandle$Holder::invokeStatic (21 bytes)   force inline by annotation
+                                      @ 1   java.lang.invoke.DirectMethodHandle::internalMemberName (8 bytes)   force inline by annotation                              @ 16   java.lang.Class::isPrimitive (0 bytes)   (intrinsic)
+                              @ 51   jdk.internal.misc.Unsafe::allocateUninitializedArray0 (90 bytes)   (intrinsic)
+
+                                      @ 17   java.lang.StringConcatHelper::prepend (22 bytes)   callee is too large
+                                  @ 71   java.lang.invoke.DirectMethodHandle$Holder::invokeStatic (17 bytes)   force inline by annotation
+                                    @ 1   java.lang.invoke.DirectMethodHandle::internalMemberName (8 bytes)   force inline by annotation
+                                    @ 13   java.lang.StringConcatHelper::newString (67 bytes)   callee is too large
+                              @ 35   java.util.HashMap::put (13 bytes)   callee uses too much stack
+////////////////////////////jit task end////////////////////////////
